@@ -1,7 +1,7 @@
 from typing import List, Dict
 from Levenshtein import distance, jaro, jaro_winkler
 from soundex import Soundex
-from enhanced1 import enhanced_jaro_winkler
+from enhanced import enhanced_jaro_winkler
 from searches import run_jaccard
 
 def exact_search(query: str, books: List[Dict[str, str]]) -> List[Dict[str, str]]:
