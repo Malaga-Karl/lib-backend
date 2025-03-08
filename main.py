@@ -8,7 +8,7 @@ from search_algorithms import exact_search, lev_search, jaro_search, traditional
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://library-system-9hlwm6lej-karls-projects-19c73209.vercel.app/"],  # Frontend URL
+    allow_origins=["https://library-system-9hlwm6lej-karls-projects-19c73209.vercel.app", "https://library-system-rho.vercel.app"],  # Frontend URL
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers
